@@ -1,0 +1,28 @@
+{
+  // Recommended settings for Ruff formatter as per https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit",
+  },
+
+  // Auto save
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+
+  // Git behavior
+  "git.autofetch": true,
+
+  // Pylance settings
+  "python.analysis.typeCheckingMode": "basic",
+
+  // Pytest settings
+}

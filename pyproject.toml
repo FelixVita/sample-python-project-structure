@@ -33,7 +33,7 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-gui = ["PyQt5"]
+dev = ["PyQt5"]
 cli = [
   "rich",
   "click",
@@ -54,3 +54,7 @@ spam-gui = "spam:main_gui"
 
 [project.entry-points."spam.magical"]
 tomatoes = "spam:main_tomatoes"
+
+[tool.ruff.lint]
+# Avoid enforcing line-length violations (`E501`)
+ignore = ["E501"]

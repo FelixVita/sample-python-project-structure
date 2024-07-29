@@ -1,0 +1,19 @@
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "streetsidesoftware.code-spell-checker",
+        "ms-python.vscode-pylance",
+        "vscode-icons-team.vscode-icons",
+        "aaron-bond.better-comments",
+        "alefragnani.bookmarks",
+        "donjayamanne.githistory",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "shyykoserhiy.git-autoconfig",
+        "github.vscode-pull-request-github",
+        "ms-toolsai.jupyter",
+        "esbenp.prettier-vscode",
+        "ms-python.python",
+        "lextudio.restructuredtext"
+    ]
+}
