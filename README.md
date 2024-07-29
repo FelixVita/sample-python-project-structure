@@ -31,12 +31,28 @@ Optionally, you may also install the development dependencies
 python -m pip install -e .[dev]
 ```
 
-#### Note to future self: Why `venv` over other tools?
+#### Note to future self 1: Why `venv` over other tools?
 
 I've decided go with `venv` instead of `virtualenv` (or any other similar tool) because it's included in the standard library.
 For a good run-down of these tools, see this stackoverflow thread:
 [What is the difference between venv, pyvenv, pyenv, virtualenv, virtualenvwrapper, pipenv, etc?](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrapper).
 I've also considered `poetry`, but it seems overkill, and to be perfectly honest I still don't understand what problem it's trying to solve.
+
+#### Note to future self 2: How is `python -m pip install -e .` different from `python -m pip install -r requirements.txt`?
+
+First of all, we're not using `requirements.txt` anymore.
+We're instead following the new PEP 517/518 standard and using `pyproject.toml` for project configuration.
+
+The normal way to install dependencies from `pyproject.toml` is to run `python -m pip install .`.
+
+However, we're using the `-e` flag, which is shorthand for `--editable`.
+
+Using the command `python -m pip install -e .` means that all dependencies will still be installed the normal way, except your own package, which will now instead be installed in "editable" mode.
+This means that any changes you make to your own source code will be immediately reflected, without having to re-install your own package with pip every time you make a change.
+
+The rationale for installing your own package into the environment (rather than just using the source code directly) is that it gives you a way to test it in the same way that your users will be installing it and running it.
+
+For more info, I recommend watching [this video](https://www.youtube.com/watch?v=QMY-OkckDwo)
 
 ### 2. Install vscode extensions
 
