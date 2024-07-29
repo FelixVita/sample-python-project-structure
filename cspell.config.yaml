@@ -3,13 +3,22 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - Anson
+  - bierner
+  - lextudio
+  - mushan
   - packagename
   - pipenv
+  - pyenv
   - pyproject
   - pytest
+  - pyvenv
+  - quickstart
+  - setuptools
   - stackoverflow
   - venv
   - virtualenv
   - virtualenvwrapper
+  - yzhang
 ignoreWords: []
 import: []

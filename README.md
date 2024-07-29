@@ -57,14 +57,14 @@ Additionally, you may want to install some of the following extensions:
 As of PEP 517/518, the `pyproject.toml` file is the new unified Python project settings file.
 It is a configuration file that allows you to specify the build system, dependencies, and other project metadata.
 
-In most projects, the `pyproject.toml` file entirely replaces 'setup.py` and `requirements.txt'.
+In most projects, the `pyproject.toml` file entirely replaces `setup.py` and `requirements.txt`.
 
 For more info, see:
+
 - [What the heck is pyproject.toml?](https://snarky.ca/what-the-heck-is-pyproject-toml/) by Brett Cannon
 - [PEP 517 and 518 in Plain English](https://chadsmith-software.medium.com/pep-517-and-518-in-plain-english-47208ca8b7a6) by Chad Smith
 - [What is pyproject.toml file for?](https://stackoverflow.com/questions/62983756/what-is-pyproject-toml-file-for) on stackoverflow
 - [Python Packaging User Guide: Writing your pyproject.toml](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) on Python.org
-
 
 ### You may still need setup.py
 
@@ -81,8 +81,7 @@ if __name__ == "__main__":
 
 We can refer to this `setup.py` file as a _shim_, because it is providing a minimal and temporary compatibility layer that allows the use of `setuptools` in conjunction with modern PEP 517/518 build systems.
 
-Read more at https://stackoverflow.com/a/69711730
-
+Read more at <https://stackoverflow.com/a/69711730>
 
 ### You may still need requirements.txt
 
