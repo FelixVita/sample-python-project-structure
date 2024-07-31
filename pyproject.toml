@@ -33,7 +33,7 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-dev = ["PyQt5"]
+dev = ["pytest", "pytest-cov"]
 cli = [
   "rich",
   "click",

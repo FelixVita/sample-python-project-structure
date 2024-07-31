@@ -116,3 +116,19 @@ If you do so, you'll place your markdown and/or reStructuredText files in the so
 The build directory will contain the generated HTML files.
 
 For more info, see <https://sphinx-rtd-tutorial.readthedocs.io/en/latest/sphinx-quickstart.html>
+
+## Testing
+
+This project uses `pytest` for testing.
+
+To run the tests, simply run
+
+```bash
+python -m pytest -v
+```
+
+To see test coverage, run
+
+```bash
+python -m pytest -v --cov=src
+```
