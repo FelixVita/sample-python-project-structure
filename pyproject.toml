@@ -33,10 +33,16 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest", "pytest-cov"]
+dev = [
+  "pytest",
+  "pytest-cov"
+]
 cli = [
   "rich",
   "click",
+]
+jupyter = [
+  "ipykernel"
 ]
 
 [project.urls]

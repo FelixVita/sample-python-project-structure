@@ -11,6 +11,14 @@ This was adapted from <https://realpython.com/python-application-layouts/> and e
 - vscode workspace extensions
 - sphinx for documentation
 
+Several ideas were also borrowed from <https://gist.github.com/ericmjl/27e50331f24db3e8f957d1fe7bbbe510?permalink_comment_id=4974632> such as
+
+- notebooks dir
+- data dir
+- scripts dir
+
+
+
 ## Steps after cloning
 
 ### 1. Create a virtual environment
@@ -132,3 +140,7 @@ To see test coverage, run
 ```bash
 python -m pytest -v --cov=src
 ```
+
+## Notebooks
+
+
