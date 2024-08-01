@@ -1,6 +1,7 @@
 {
   //Recommended vscode workspace settings for this repo
 
+
   // Ruff formatter - recommended settings as per https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
   "[python]": {
     "editor.formatOnSave": true,
@@ -16,15 +17,19 @@
     "notebook.source.organizeImports": "explicit",
   },
 
+
   // Auto save
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 2000,
 
+
   // Git behavior
   "git.autofetch": true,
 
+
   // Pylance settings
   "python.analysis.typeCheckingMode": "basic",
+
 
   // Pytest (default vscode workspace settings when enabling Testing pane)
   "python.testing.pytestArgs": [
