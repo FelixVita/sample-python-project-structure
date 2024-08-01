@@ -129,7 +129,7 @@ For more info, see <https://sphinx-rtd-tutorial.readthedocs.io/en/latest/sphinx-
 
 This project uses `pytest` for testing.
 
-To run the tests, simply run
+To run the tests either use the built-in vscode "Testing" pane, or simply open a terminal and run
 
 ```bash
 python -m pytest -v
@@ -143,4 +143,5 @@ python -m pytest -v --cov=src
 
 ## Notebooks
 
-
+This repo includes a demo of Quarto Notebooks and Jupyter Notebooks.
+Feel free to have a look inside these files for more info.

@@ -1,4 +1,4 @@
-from packagename.internal_module_a.a import add, sub, mul, div
+from packagename.submodule_a.a import add, sub, mul, div
 
 def test_add():
     assert add(10, 20) == 30

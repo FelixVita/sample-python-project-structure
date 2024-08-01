@@ -1,4 +1,4 @@
-from packagename.internal_module_b.b import Stack
+from packagename.submodule_b.b import Stack
 import pytest
 
 @pytest.fixture
@@ -24,4 +24,4 @@ def test_pop(stack):
     assert stack.pop() == "world"
     assert stack.pop() == "hello"
     assert stack.pop() is None
-    
+
