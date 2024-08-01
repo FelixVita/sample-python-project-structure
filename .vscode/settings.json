@@ -1,5 +1,7 @@
 {
-  // Recommended settings for Ruff formatter as per https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+  //Recommended vscode workspace settings for this repo
+
+  // Ruff formatter - recommended settings as per https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
   "[python]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -24,5 +26,11 @@
   // Pylance settings
   "python.analysis.typeCheckingMode": "basic",
 
-  // Pytest settings
+  // Pytest (default vscode workspace settings when enabling Testing pane)
+  "python.testing.pytestArgs": [
+    "tests",
+    "-v" // verbose (not a default setting)
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
 }
