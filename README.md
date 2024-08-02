@@ -145,3 +145,12 @@ python -m pytest -v --cov=src
 
 This repo includes a demo of Quarto Notebooks and Jupyter Notebooks.
 Feel free to have a look inside these files for more info.
+
+
+## GitHub Actions
+
+This repo includes a GitHub Actions workflow that runs the tests on every push and pull request.
+
+You can find the workflow file in `.github/workflows/ci.yaml`.
+
+This was adapted from the YouTube video [Unit testing Python code using Pytest + GitHub Actions](https://www.youtube.com/watch?v=0aEJBygCn5Q) by Carberra.
