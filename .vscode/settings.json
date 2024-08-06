@@ -38,4 +38,7 @@
   ],
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
+
+  // cSpell Spell Checker Extension
+  "cSpell.language": "en,nb,lorem" // English, Norwegian Bokmål, Lorem Ipsum
 }

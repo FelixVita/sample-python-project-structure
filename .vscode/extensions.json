@@ -15,6 +15,7 @@
         "esbenp.prettier-vscode",
         "ms-python.python",
         "lextudio.restructuredtext",
-        "quarto.quarto"
+        "quarto.quarto",
+        "swyddfa.esbonio"
     ]
 }

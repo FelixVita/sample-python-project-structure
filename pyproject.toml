@@ -32,7 +32,10 @@ classifiers = [
 [project.optional-dependencies]
 dev = [
   "pytest",
-  "pytest-cov"
+  "pytest-cov",
+  "sphinx",
+  "sphinx_rtd_theme",
+  "esbonio",
 ]
 cli = [
   "rich",

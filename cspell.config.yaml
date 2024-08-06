@@ -6,21 +6,29 @@ words:
   - Anson
   - bierner
   - Carberra
+  - figclass
   - lextudio
+  - linenos
+  - literalinclude
+  - maxdepth
   - mushan
   - packagename
   - pipenv
+  - projectname
   - pyenv
   - pyproject
   - pypy
   - pytest
   - pyvenv
   - quickstart
+  - realpython
   - setuptools
   - stackoverflow
+  - toctree
   - venv
   - virtualenv
   - virtualenvwrapper
+  - Wildenstein
   - yzhang
 ignoreWords: []
 import: []

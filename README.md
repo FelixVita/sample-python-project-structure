@@ -17,8 +17,6 @@ Several ideas were also borrowed from <https://gist.github.com/ericmjl/27e50331f
 - data dir
 - scripts dir
 
-
-
 ## Steps after cloning
 
 ### 1. Create a virtual environment
@@ -119,11 +117,23 @@ I recommend using Sphinx.
 To get started, navigate to the `docs` directory and run `sphinx-quickstart`.
 This will create the necessary files and directory structure.
 
+> Tip: If this fails (for example due to Microsoft ASR blocking .exe files and causing an "Access is denied" error), then you can instead try to run `python -m sphinx.cmd.quickstart`. According to a [post on StackOverflow](https://stackoverflow.com/a/46507300), this  explicitly loads Sphinx's quickstart module.
+
 You will be faced with the choice of separating the source and build directories.
 If you do so, you'll place your markdown and/or reStructuredText files in the source directory.
 The build directory will contain the generated HTML files.
 
+When prompted about the "Project release", if you don't know what to write, then you can just type something like `0.0.1`
+
 For more info, see <https://sphinx-rtd-tutorial.readthedocs.io/en/latest/sphinx-quickstart.html>
+
+Alternatively, you can watch the Real Python tutorial video series [Documenting Python Projects With Sphinx and Read the Docs](https://realpython.com/lessons/sphinx-basics-python/)
+
+To build the documentation on Windows, run
+
+```bash
+.\make html
+```
 
 ## Testing
 
@@ -141,11 +151,18 @@ To see test coverage, run
 python -m pytest -v --cov=src
 ```
 
+In theory those two simple commands are all you need to run tests and check code coverage.
+
+However, as a developer, especially if you're doing TDD, another important way that you'll be using tests (if not THE most important) is running tests repeatedly when writing code.
+This usually involves running just one or two tests over and over again (often in debug mode), and for this I prefer to use the vscode GUI's Testing pane.
+For a nice summary of what buttons to click in vscode, see vscode's officials docs: [Python testing in Visual Studio Code](https://code.visualstudio.com/docs/python/testing)
+
 ## Notebooks
 
 This repo includes a demo of Quarto Notebooks and Jupyter Notebooks.
 Feel free to have a look inside these files for more info.
 
+Quarto is the spiritual successor to Jupyter Notebooks, and I personally prefer it, both as a prototyping tool and as a code presentation tool — i.e. both of the things that I used to use Jupyter Notebooks for.
 
 ## GitHub Actions
 
