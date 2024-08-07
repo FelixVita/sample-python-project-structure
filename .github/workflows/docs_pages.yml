@@ -37,7 +37,7 @@ jobs:
       # Grab the generated html files from the build folder and commit them to the gh-pages branch
       - name: Init new repo in dist folder and commit generated files
         run: |
-          cd docs/build/html/
+          cd docs/_build/html/
           git init
           touch .nojekyll
           git add -A
