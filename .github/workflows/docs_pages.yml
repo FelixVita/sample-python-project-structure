@@ -18,9 +18,9 @@ jobs:
 
       # Install python on the virtual machine
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.10
+          python-version: 3.8
 
       # Pip install sphinx and sphinx-rtd-theme
       - name: Install dependencies
