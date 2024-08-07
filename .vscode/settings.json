@@ -40,5 +40,9 @@
   "python.testing.pytestEnabled": true,
 
   // cSpell Spell Checker Extension
-  "cSpell.language": "en,nb,lorem" // English, Norwegian Bokmål, Lorem Ipsum
+  "cSpell.language": "en,nb,lorem", // English, Norwegian Bokmål, Lorem Ipsum
+
+  // To get the cursor to stop at underscores in word-related navigations like Ctrl-LeftArrow or Ctrl-Backspace
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
 }
+
