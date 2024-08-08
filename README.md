@@ -212,3 +212,9 @@ See also: [GitHub Docs: Building and testing Python](https://docs.github.com/en/
 ### Packaging Releases
 
 TODO
+
+## Appendix
+
+### Other videos worth a watch
+
+- InfoWorld's [How to avoid the dreaded circular import problem in Python](https://www.youtube.com/watch?v=ya3PjeCnIME)
