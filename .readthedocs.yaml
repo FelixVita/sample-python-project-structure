@@ -33,6 +33,5 @@ sphinx:
 python:
   install:
     - method: pip
-      path: .
-    # - requirements: requirements.txt
-    - requirements: docs/rtd_requirements.txt
+      path: .  # This achieves adding local packages to path, in a much less ugly way than the oft-cited `sys.path.insert(0, os.path.abspath("../../"))` in conf.py
+    - requirements: docs/readthedocs_requirements.txt

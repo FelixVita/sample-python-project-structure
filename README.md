@@ -193,23 +193,39 @@ Feel free to have a look inside these files for more info.
 
 Quarto is the spiritual successor to Jupyter Notebooks, and I personally prefer it, both as a prototyping tool and as a code presentation tool — i.e. both of the things that I used to use Jupyter Notebooks for.
 
-## GitHub Actions
+## CI Workflows
 
 This repo includes some GitHub Actions workflows to automate CI/CD processes like testing,  building documentation, and packaging releases (TODO).
 
-### Continuous Integration (CI) Tests
+### GitHub Action: Continuous Integration (CI) Tests
 
 The workflow file in `.github/workflows/ci.yaml` will run all the tests in the `tests/` dir every time you push a commit to the main branch, or open a pull request on the main branch.
 
 This was adapted from the YouTube video [Unit testing Python code using Pytest + GitHub Actions](https://www.youtube.com/watch?v=0aEJBygCn5Q) by Carberra.
 
-### Continuous Documentation Build
+### GitHub Action: Continuous Documentation Build
+
+This GitHub Action publish to a branch in the same repo.
 
 You can find the workflow file in `.github/workflows/docs-pages.yaml`.
 
 See also: [GitHub Docs: Building and testing Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
 
-### Packaging Releases
+> **Note:** I'm not sure how useful this GitHub Action is in practice. You'd normally publish docs to a hosting service where the html is properly rendered, such as GitHub Pages or ReadTheDocs.org. For a demonstration of the latter, see the next section.
+
+### ReadTheDocs Workflow: Publish to ReadTheDocs
+
+By signing up for an account at readthedocs.org and connecting your GitHub repo, you can automatically build and host your documentation.
+
+This service is free for public repos, but there is also a paid commercial version available at readthedocs.com, which offers private hosting.
+
+For this repo, the relevant workflow file is the root-level `.readthedocs.yaml` file.
+
+This is accompanied by the `.\docs\readthedocs_requirements.txt` file, which specifies the dependencies needed to build the documentation on ReadTheDocs.
+
+With the presence of these two files, and once you've signed up for an account and connected your repo, ReadTheDocs will automatically build and host your documentation every time you push a commit to the main branch.
+
+### GitHub Action: Packaging Releases
 
 TODO
 
