@@ -211,7 +211,16 @@ You can find the workflow file in `.github/workflows/docs-pages.yaml`.
 
 See also: [GitHub Docs: Building and testing Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
 
-> **Note:** I'm not sure how useful this GitHub Action is in practice. You'd normally publish docs to a hosting service where the html is properly rendered, such as GitHub Pages or ReadTheDocs.org. For a demonstration of the latter, see the next section.
+In short, this action will build the documentation every time you push a commit to the main branch, and then publish the rendered HTML to a branch called `gh-pages`  in the same repo.
+
+The intended use case for this is to host your documentation on GitHub Pages.
+
+To set this up on GitHub Pages, go to your repo's settings, scroll down to the "GitHub Pages" section, and set the source to the `gh-pages` branch (root dir) and click save.
+
+This will trigger an action, and after a few minutes, your documentation should be live at `https://<your-username>.github.io/<your-repo-name>/`.
+(Link will be shown in the action logs).
+
+> **Note:** GitHub Pages is a free service, but it only works for public repos. For private hosting, see the ReadTheDocs section below.
 
 ### ReadTheDocs Workflow: Publish to ReadTheDocs
 
@@ -224,6 +233,8 @@ For this repo, the relevant workflow file is the root-level `.readthedocs.yaml` 
 This is accompanied by the `.\docs\readthedocs_requirements.txt` file, which specifies the dependencies needed to build the documentation on ReadTheDocs.
 
 With the presence of these two files, and once you've signed up for an account and connected your repo, ReadTheDocs will automatically build and host your documentation every time you push a commit to the main branch.
+
+For troubleshooting a variety of issues regarding readthedocs-autodoc integration, I found this post on StackOverflow quite helpful: <https://stackoverflow.com/a/71586732>
 
 ### GitHub Action: Packaging Releases
 
