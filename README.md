@@ -194,10 +194,20 @@ Quarto is the spiritual successor to Jupyter Notebooks, and I personally prefer 
 
 ## GitHub Actions
 
-This repo includes a GitHub Actions workflow that runs the tests on every push and pull request.
+This repo includes some GitHub Actions workflows to automate CI/CD processes like testing,  building documentation, and packaging releases (TODO).
 
-You can find the workflow file in `.github/workflows/ci.yaml`.
+### Continuous Integration (CI) Tests
+
+The workflow file in `.github/workflows/ci.yaml` will run all the tests in the `tests/` dir every time you push a commit to the main branch, or open a pull request on the main branch.
 
 This was adapted from the YouTube video [Unit testing Python code using Pytest + GitHub Actions](https://www.youtube.com/watch?v=0aEJBygCn5Q) by Carberra.
 
+### Continuous Documentation Build
+
+You can find the workflow file in `.github/workflows/docs-pages.yaml`.
+
 See also: [GitHub Docs: Building and testing Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
+
+### Packaging Releases
+
+TODO
