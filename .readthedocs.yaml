@@ -34,5 +34,5 @@ python:
   install:
     - method: pip
       path: .
-    - requirements: requirements.txt
+    # - requirements: requirements.txt
     - requirements: docs/rtd_requirements.txt
