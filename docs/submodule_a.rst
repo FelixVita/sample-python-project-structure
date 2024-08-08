@@ -49,21 +49,27 @@ Visit `<www.realpython.com>`_ today!
 Visit `RealPython <https://www.realpython.com>`_ today!
 
 
-Internal links
---------------
+Creating Internal links
+-----------------------
 
-Create a named internal link reference (note the blank line!):
+To create internal links, just write the following anywhere in an rst file:
 
-.. submodule_b:
+``.. _name_of_internal_link:``
+
+Note the syntax: Two dots followed by a space, then an underscore.
+This is the syntax for creating a named reference.
+
+Using Internal Links
+---------------------
 
 Insert a link to the named reference (can be used without :ref: if local to the file, but usually better practice to always be explicit):
 
-:ref:`link_name`
+:ref:`lorem-ipsum`
 
 
 Show alternate text as the link instead of the link name:
 
-:ref:`alternate text <link_name>`
+:ref:`Alternate Text <lorem-ipsum>`
 
 
 Directives and Comments
@@ -179,3 +185,10 @@ Embed the entire submodule_b.py (code) file:
     :linenos:
     :language: python
 
+################
+Credits
+################
+
+Most of the content in this rst file was adapted from Christopher Trudeau's
+`Sphinx RST Cheat Sheet for Python Docstrings <https://trudeau.dev/cheatsheets/rst.html>`_
+as featured in the RealPython course `Documenting Python Projects With Sphinx and Read the Docs <https://realpython.com/courses/python-sphinx/>`_.

@@ -4,11 +4,17 @@ dictionaryDefinitions: []
 dictionaries: []
 words:
   - Anson
+  - autoattribute
+  - autoclass
+  - autodecorator
   - autodoc
+  - autofunction
+  - automethod
   - automodule
   - bierner
   - bysource
   - Carberra
+  - Docstrings
   - figclass
   - groupwise
   - lextudio
@@ -18,7 +24,6 @@ words:
   - mushan
   - packagename
   - pipenv
-  - projectname
   - pydoc
   - pyenv
   - pyproject
@@ -32,6 +37,7 @@ words:
   - toctree
   - undoc
   - venv
+  - viewcode
   - virtualenv
   - virtualenvwrapper
   - Wildenstein

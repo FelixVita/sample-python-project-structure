@@ -11,11 +11,12 @@ jobs:
       matrix:
         os: [windows-latest]  # Feel free to also add 'macos-latest' and 'ubuntu-latest' here.
         python-version:
-          - "3.9"
+          # Feel free to also add/uncomment other Python versions here. I've disabled all but 1 here to avoid overusing Github Actions minutes.
+          # - "3.9"
           - "3.10"
-          - "3.11"
-          - "3.12-dev"
-          - "pypy-3.9"
+          # - "3.11"
+          # - "3.12-dev"
+          # - "pypy-3.9"
 
     name: Test
     runs-on: ${{ matrix.os }}

@@ -3,17 +3,51 @@ Autodoc Demo
 ************
 
 
+
 The `automodule` directive takes a module filename as an argument and causes autodoc to parse that file for pydoc comments.
 
-To learn more about this directive and its options, head to <https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#module-sphinx.ext.autodoc>
-
-Let's try to invoke it below:
-
-.. automodule:: projectname.submodule_a
+To learn more about this directive and its options, head to `<https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#module-sphinx.ext.autodoc>`_
 
 
+===================
+Invoking automodule
+===================
 
-Rather than include a whole module, you can explicitly include a code thing:
+We can invoke the automodule directive to parse any python module and display its pydoc contents.
+
+For example, we can invoke the automodule directive to parse the module `packagename.submodule_b.b`.
+
+Let's try it:
+
+.. automodule:: packagename.submodule_b.b
+   :members:
+   :undoc-members:
+   :private-members:
+   :special-members:
+
+
+If you don't see anything between the line "Let's try it:" above and this line, then the automodule directive is not working as expected.
+
+----------------
+
+
+Invoking specific code objects
+------------------------------
+
+You can invoke specific code objects instead of a whole module.
+
+For example, we can specifically grab only the `add` method from the `packagename.submodule_a.a` module.
+
+Let's try it:
+
+.. automethod:: packagename.submodule_a.a.add
+
+
+If you don't see anything between the line "Let's try it:" above and this line, then the automodule directive is not working as expected.
+
+----------------
+
+Here are some other directives you can use to invoke specific code objects:
 
 .. code-block:: rst
    :linenos:
@@ -26,3 +60,4 @@ Rather than include a whole module, you can explicitly include a code thing:
    .. autodata:: data_item_name
    .. automethod:: module.Class.method
    .. autoattribute:: module.Class.attr
+

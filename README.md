@@ -17,6 +17,8 @@ Several ideas were also borrowed from <https://gist.github.com/ericmjl/27e50331f
 - data dir
 - scripts dir
 
+The arithmetic module example was borrowed from NeuralNine's YouTube video [Importing Your Own Python Modules Properly](https://www.youtube.com/watch?v=GxCXiSkm6no).
+
 ## Steps after cloning
 
 ### 1. Create a virtual environment
