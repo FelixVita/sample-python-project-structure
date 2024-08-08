@@ -36,11 +36,11 @@ Invoking specific code objects
 
 You can invoke specific code objects instead of a whole module.
 
-For example, we can specifically grab only the `add` method from the `packagename.submodule_a.a` module.
+For example, we can specifically grab only the `add` function from the `packagename.submodule_a.a` module.
 
 Let's try it:
 
-.. automethod:: packagename.submodule_a.a.add
+.. autofunction:: packagename.submodule_a.a.add
 
 
 If you don't see anything between the line "Let's try it:" above and this line, then the automodule directive is not working as expected.
