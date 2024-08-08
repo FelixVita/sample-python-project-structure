@@ -37,10 +37,6 @@ dev = [
   "sphinx_rtd_theme",
   "esbonio",
 ]
-cli = [
-  "rich",
-  "click",
-]
 jupyter = [
   "ipykernel",
   "matplotlib"

@@ -37,6 +37,7 @@ Optionally, you may also install the development dependencies
 
 ```bash
 python -m pip install -e .[dev]
+python -m pip install -e .[jupyter]
 ```
 
 #### Note to future self 1: Why `venv` over other tools?
