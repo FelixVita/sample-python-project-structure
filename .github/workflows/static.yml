@@ -43,11 +43,10 @@ jobs:
         run: |
           python -m pip install -U sphinx
           python -m pip install sphinx-rtd-theme
-          python -m pip install -e ./src  # Install local module in editable mode
 
-      # # Set PYTHONPATH to include the src directory
-      # - name: Set PYTHONPATH
-      #   run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)/src" >> $GITHUB_ENV
+      # Set PYTHONPATH to include the src directory
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)/src" >> $GITHUB_ENV
 
       # Execute the source code's makefile to build the sphinx docs
       - name: Build sphinx docs
