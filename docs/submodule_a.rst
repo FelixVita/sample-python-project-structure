@@ -190,6 +190,10 @@ Embed the entire submodule_b.py (code) file:
     :linenos:
     :language: python
 
+.. warning:: Can't see any python code excerpt above?
+    Same problem as in the previous warning box about the README file:
+    Its relative path is outside the docs directory.
+
 ################
 Credits
 ################
