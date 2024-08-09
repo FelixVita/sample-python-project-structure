@@ -1,5 +1,8 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Primarily based on the default starter workflow (from GitHub Settings > Pages),
+# and with some content (the docs build steps) adapted from EEHolmes-DataScience's YouTube tutorial [GitHub Action: Sphinx documentation](https://www.youtube.com/watch?v=SxkM1SK9YlI)
+
+name: Deploy static html docs to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -65,4 +68,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
