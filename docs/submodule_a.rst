@@ -166,6 +166,11 @@ Embed a smaller part of the README.md file in the root directory:
     :start-line: 0
     :end-line: 3
 
+.. warning:: Can't see any README excerpt above?
+    For most CI-based docs builds, this will indeed fail, due to the relative path being outside the docs directory.
+    In general, you should probably avoid writing your docs in a way such that you are relying on any files outside the docs directory.
+    If you really want to include the repo-level README, then maybe add some bash commands to your CI workflow to copy the README file into the docs dir before building, or something? Idk.
+
 .. For more options for this directive, see https://stackoverflow.com/a/54519037
 
 ===============

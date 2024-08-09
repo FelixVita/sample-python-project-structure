@@ -149,13 +149,13 @@ Here's an example of what a simple `index.rst` file might look like, with some e
 Welcome to my project's documentation!
 ======================================
 
-Version: |release|.. The paired pipe symbols (|) here are a variable replacement mechanism. So, |release| will be replaced with the value of the `release` variable in your `conf.py` file.
+Version: |release| ..The paired pipe symbols (|) here are a variable replacement mechanism. So, |release| will be replaced with the value of the `release` variable in your `conf.py` file.
 
 .. toctree::
-   :maxdepth: 2 ..  Specifies how deep to display the toctree. If = 2, you'll see two levels of headers (i.e. title and section, but no sub- or sub-subsection headers).
+   :maxdepth: 2 ..Specifies how deep to display the toctree. If = 2, you'll see two levels of headers (i.e. title and section, but no sub- or sub-subsection headers).
 
-   installation.rst .. Path to file relative to the index.rst file.
-   usage.rst .. File extension is optional btw, but I like to include it for clarity.
+   installation.rst ..Path to file relative to the index.rst file.
+   usage.rst ..File extension is optional btw, but I like to include it for clarity.
 ```
 
 ### Documenting your code
