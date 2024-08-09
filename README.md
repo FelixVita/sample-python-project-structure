@@ -116,7 +116,16 @@ You can generate a `requirements.txt` file from the `pyproject.toml` by using th
 
 ## Docs
 
-I recommend using Sphinx.
+The ideal way to create documentation is to write it as you go along, using docstrings in your code.
+
+And the best way to maintain documentation is to have it automatically build regularly, usually every time you push a commit to your main branch — continuous documentation, if you will.
+
+The de facto go-to tool for this is Sphinx, with reStructuredText (rst) as the file format of the documentation, plus the built-in sphinx autodoc for collecting the pydoc docstrings from your code.
+
+Sphinx supports extensions, and the `autodoc` extension reads pydoc and import it into your documentation.
+Autodoc ships with Sphinx, so all you need to do is add `sphinx.ext.autodoc` to `extensions` in your `conf.py` to enable it
+
+You can find an example `conf.py` file in the `docs` dir.
 
 ### Sphinx Quickstart
 
@@ -148,6 +157,8 @@ To build the documentation on Windows, run
 .\make html
 ```
 
+Once your documentation has been built (aka rendered into html), you can view it on your computer just by opening the `index.rst` file in your preferred web browser.
+
 And to delete the build files, run
 
 ```bash
@@ -156,11 +167,13 @@ And to delete the build files, run
 
 > **Note:** If you're on Windows, you might need to use `.\make.bat` instead of `.\make`.
 
-### Documenting your code
+### Hosting your documentation
 
-- Sphinx supports extensions
-- The `autodoc` extension reads pydoc and import it into your documentation
-- Ships with Sphinx — Just add `sphinx.ext.autodoc` to `extensions` in your `conf.py` to enable it
+Your documentation (in the form of rendered HTML files) is not going to be of much use to others if you don't upload the rendered HTML to some sort of webpage where others can access it and view it.
+
+Until recently, it was not completely straightforward to host these static HTML files, at least not for private repos.
+But with the general availability of GitHub Pages (also for private repos), this is now quite easy, and only requires a github action script, and a small setting on GitHub.
+See the "CI Workflows" section below for more.
 
 ## Testing
 
