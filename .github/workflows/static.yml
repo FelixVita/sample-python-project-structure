@@ -31,32 +31,39 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       # Install python on the virtual machine
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: 3.8
 
-      # Pip install sphinx and sphinx-rtd-theme
+      # Install sphinx and sphinx-rtd-theme
       - name: Install dependencies
         run: |
-            python -m pip install -U sphinx
-            python -m pip install sphinx-rtd-theme
+          python -m pip install -U sphinx
+          python -m pip install sphinx-rtd-theme
+          python -m pip install -e ./src  # Install local module in editable mode
+
+      # # Set PYTHONPATH to include the src directory
+      # - name: Set PYTHONPATH
+      #   run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)/src" >> $GITHUB_ENV
 
       # Execute the source code's makefile to build the sphinx docs
       - name: Build sphinx docs
         run: |
-              make -C docs clean
-              make -C docs html
+          make -C docs clean
+          make -C docs html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the built docs
           path: './docs/_build/html'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
