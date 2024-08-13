@@ -122,10 +122,11 @@ And the best way to maintain documentation is to have it automatically build reg
 
 The de facto go-to tool for this is Sphinx, with reStructuredText (rst) as the file format of the documentation, plus the built-in sphinx autodoc for collecting the pydoc docstrings from your code.
 
-Sphinx supports extensions, and the `autodoc` extension reads pydoc and import it into your documentation.
-Autodoc ships with Sphinx, so all you need to do is add `sphinx.ext.autodoc` to `extensions` in your `conf.py` to enable it
+Docs are typically rendered into static HTML and hosted either on GitHub Pages or on ReadTheDocs.
+This repo shows you how to do both, and you can check out the final product here:
 
-You can find an example `conf.py` file in the `docs` dir.
+- GitHub Pages: https://felixvita.github.io/sample-python-project-structure/
+- ReadTheDocs: https://sample-python-project-structure.readthedocs.io/en/latest/
 
 ### Sphinx Quickstart
 
@@ -148,6 +149,13 @@ When prompted about the "Project release", if you don't know what to write, then
 For more info, see <https://sphinx-rtd-tutorial.readthedocs.io/en/latest/sphinx-quickstart.html>
 
 Alternatively, you can watch the Real Python tutorial video series [Documenting Python Projects With Sphinx and Read the Docs](https://realpython.com/lessons/sphinx-basics-python/)
+
+### Sphinx Autodoc
+
+Sphinx supports extensions, and the `autodoc` extension reads pydoc and import it into your documentation.
+Autodoc ships with Sphinx, so all you need to do is add `sphinx.ext.autodoc` to `extensions` in your `conf.py` to enable it
+
+You can find an example `conf.py` file in the `docs` dir.
 
 ### Building the documentation
 
