@@ -125,8 +125,8 @@ The de facto go-to tool for this is Sphinx, with reStructuredText (rst) as the f
 Docs are typically rendered into static HTML and hosted either on GitHub Pages or on ReadTheDocs.
 This repo shows you how to do both, and you can check out the final product here:
 
-- GitHub Pages: https://felixvita.github.io/sample-python-project-structure/
-- ReadTheDocs: https://sample-python-project-structure.readthedocs.io/en/latest/
+- GitHub Pages: <https://felixvita.github.io/sample-python-project-structure/>
+- ReadTheDocs: <https://sample-python-project-structure.readthedocs.io/en/latest/>
 
 ### Sphinx Quickstart
 
@@ -222,7 +222,7 @@ The workflow file in `.github/workflows/ci.yaml` will run all the tests in the `
 
 This was adapted from the YouTube video [Unit testing Python code using Pytest + GitHub Actions](https://www.youtube.com/watch?v=0aEJBygCn5Q) by Carberra.
 
-### GitHub Action: Continuous Documentation Build
+### GitHub Action: Publish Docs to GitHub Pages
 
 This GitHub Action builds your docs, saves it as a build artifact, and uploads it for hosting on GitHub Pages.
 
@@ -231,6 +231,9 @@ This GitHub Action builds your docs, saves it as a build artifact, and uploads i
 You can find the workflow file in `.github/workflows/docs-pages.yaml`.
 
 See also: [GitHub Docs: Building and testing Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
+
+> **Note:** If you find a tutorial that tells you to upload your docs to its own branch in the same repo, then you can ignore that.
+> This is how it used to work, but this is no longer necessary.
 
 In short, this action will build the documentation every time you push a commit to the main branch, and then publish the rendered HTML to a branch called `gh-pages`  in the same repo.
 
@@ -243,7 +246,7 @@ This will trigger an action, and after a few minutes, your documentation should 
 
 > **Note:** GitHub Pages is a free service, but it only works for public repos. For private hosting, see the ReadTheDocs section below.
 
-### ReadTheDocs Workflow: Publish to ReadTheDocs
+### ReadTheDocs Workflow: Publish Docs to ReadTheDocs
 
 By signing up for an account at readthedocs.org and connecting your GitHub repo, you can automatically build and host your documentation.
 
