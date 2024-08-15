@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 name = "packagename"
 version = "2020.0.0"
 dependencies = [
-  "numpy"
+  "numpy",
 ]
 requires-python = ">=3.8"
 authors = [
@@ -36,10 +36,11 @@ dev = [
   "sphinx",
   "sphinx_rtd_theme",
   "esbonio",
+  "build",
 ]
 jupyter = [
   "ipykernel",
-  "matplotlib"
+  "matplotlib",
 ]
 
 [project.urls]
