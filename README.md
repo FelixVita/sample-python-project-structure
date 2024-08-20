@@ -269,6 +269,7 @@ TODO
 ### Creating a release
 
 - https://textbooks.cs.ksu.edu/cc410/ii-gui/15-releases/07-building-wheel/
+- https://til.simonwillison.net/python/pyproject
 
 ### Misc videos worth a watch
 
