@@ -264,10 +264,17 @@ For troubleshooting a variety of issues regarding readthedocs-autodoc integratio
 
 TODO
 
-## Additional Reading
+## Sources & Additional Reading
+
+### Project structure 
+
+- Should your project have a `__main__.py` file? — https://medium.com/@jameskabbes/adding-main-py-to-your-python-package-ff0cba4b8f98
 
 ### Creating a release
 
+- https://stackoverflow.com/questions/62983756/what-is-pyproject-toml-file-for
+- https://snarky.ca/what-the-heck-is-pyproject-toml/
+- https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/
 - https://textbooks.cs.ksu.edu/cc410/ii-gui/15-releases/07-building-wheel/
 - https://til.simonwillison.net/python/pyproject
 
