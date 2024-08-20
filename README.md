@@ -264,8 +264,12 @@ For troubleshooting a variety of issues regarding readthedocs-autodoc integratio
 
 TODO
 
-## Appendix
+## Additional Reading
 
-### Other videos worth a watch
+### Creating a release
+
+- https://textbooks.cs.ksu.edu/cc410/ii-gui/15-releases/07-building-wheel/
+
+### Misc videos worth a watch
 
 - InfoWorld's [How to avoid the dreaded circular import problem in Python](https://www.youtube.com/watch?v=ya3PjeCnIME)
