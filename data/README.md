@@ -1,6 +1,6 @@
 # Data
 
-This might not be needed for all projects.
+This folder named 'data' might not be needed for all projects.
 
 And even if the project uses data, you'd probably usually want to .gitignore the contents of these folders, as data is usually just a product of running the code, and not something that should be version controlled.
 

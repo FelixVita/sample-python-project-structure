@@ -212,6 +212,24 @@ Feel free to have a look inside these files for more info.
 
 Quarto is the spiritual successor to Jupyter Notebooks, and I personally prefer it, both as a prototyping tool and as a code presentation tool — i.e. both of the things that I used to use Jupyter Notebooks for.
 
+## Distribution and Packaging
+
+This project uses `build` for packaging.
+It is included in the optional `dev` dependencies in the `pyproject.toml` file.
+
+To build a distribution, simply run
+
+```bash
+python -m build
+```
+
+This will create a `dist` folder containing the wheel.
+
+> **Tip:** Wheels are actually just zip archives containing the source code.
+> This means you can inspect the contents of the wheel by unzipping it.
+
+I could write more here about what wheels are used for and how to install them, but I don't really use wheels myself in any of my projects, so I'll leave that to the official Python Packaging User Guide: [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/)
+
 ## CI Workflows
 
 This repo includes some GitHub Actions workflows to automate CI/CD processes like testing,  building documentation, and packaging releases (TODO).
